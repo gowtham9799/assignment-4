@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>html-final-ass</title>  
+
+    <script
+    src="https://kit.fontawesome.com/1f93242de2.js"
+    crossorigin="anonymous">
+  </script>
+<script>
+   /* When the user clicks on the button, 
+   toggle between hiding and showing the dropdown content */
+   function myFunction() {
+     document.getElementById("myDropdown").classList.toggle("show");
+   }
+   
+   // Close the dropdown if the user clicks outside of it
+   window.onclick = function(event) {
+     if (!event.target.matches('.dropbtn')) {
+       var dropdowns = document.getElementsByClassName("dropdown-content");
+       var i;
+       for (i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+         if (openDropdown.classList.contains('show')) {
+           openDropdown.classList.remove('show');
+         }
+       }
+     }
+   }
+   </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "399px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+ 
+</head>
+
+<body>
+ <container-fluid >
+   <div class="mobilenav"  style="width:400px; height: 60px;display: flex;">
+      <div style="width: 50%; height: 60px;" class="navdiv11">
+         <img class="navlogo11" style="width: 50%; height: 30px; margin-left: 20px;" src="./pictures/logo-white.png"></img>
+        </div> 
+    
+        <div style="width: 50%; height: 60px;" class="">
+         <!-- <i style="width: 80px; height: 80px; margin-top: 2rem; padding-left: 4.5rem;" class="fa-solid fa-bars fa-2xl"></i> -->
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="navheading" href="#">HOME</a>
+            <a href="#">PROJECT</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICE</a>
+            <a href="#">BLOG</a>
+            <a href="#">PAGES</a>
+          </div>
+          
+          
+          <span style="font-size:30px;cursor:pointer;padding-top: 30px; padding-left:90px;" onclick="openNav()">&#9776;</span>
+        </div> 
+   </div>
+ <div class="parallax">
+ <div class="nav">
+
+   <div class="navdiv1">
+    <img class="navlogo" style="width: 80px; height: 30px; margin-top: 40px; margin-left: 40px;" src="./pictures/logo-white.png"></img>
+   </div>
+
+   <div class="navdiv2">
+      
+        <a class="navheading nav-link nav-link-ltr" id="head1">HOME</a>
+        <a class="navheading nav-link nav-link-ltr"id="head2" >PROJECT</a>
+        <a class="navheading nav-link nav-link-ltr" id="head3">ABOUT</a>
+        <a class="navheading nav-link nav-link-ltr" id="head4">SERVICE</a>
+        <a class="navheading nav-link nav-link-ltr" id="head4">BLOG</a>  
+
+   <button onclick="myFunction()" class="dropbtn navheading nav-link nav-link-ltr ">PAGES<i style="margin-left: 5px;" class="fa-solid fa-angle-down"></i></button>
+   <div id="myDropdown" class="dropdown-content">
+     <a href="#home">404 ERROR PAGES</a>
+     <a href="#about">PROTECTED PAGE</a>
+     <a href="#contact">STYLE GUIDE</a>
+     <a href="#contact">LICENSING</a>
+   </div>
+
+   </div>
+   
+   <div class="navdiv3">
+<p>GET FREE QUOTE</p>
+   </div>
+
+</div>
+
+<div style="display: flex;">
+<div>
+   <h1 class="mainh11">YOU DREAM. WE CREATE.</h1>
+   <p class="mainp11">We turn your ideas to reality, we don't stop until you're satisfied.</p>
+   <button class="button">GET FREE QUOTE</button>
+</div>
+
+    <div class="mainicon">
+      <div class="mainicon2" style="height: 3.7rem;">
+    <i class="fa-brands fa-facebook-f mainicon1 fa-lg"></i>
+      </div>
+      <hr style="margin-left: 10px; margin-right: 10px;">
+    <div style="height: 3.7rem;">
+      <i  class="fa-brands fa-twitter mainicon1 fa-lg" ></i>
+    </div>
+    <hr style="margin-left: 10px; margin-right: 10px;">
+    <div style="height: 3.7rem;">
+      <i  class="fa-brands fa-linkedin-in mainicon1 fa-lg"></i>
+    </div>
+    <hr style="margin-left: 10px; margin-right: 10px;">
+    <div>
+      <i  class="fa-brands fa-instagram mainicon1 fa-lg"></i>
+    </div>
+     
+   </div>
+
+</div>
+
+ <div class="maindeteail" style="display: flex;">
+   <div class="maindeteaildiv">
+      <ul>
+         <i style="width: 30px; height: 30px;color: rgb(248, 247, 247);" class="fa-sharp fa-solid fa-phone fa-lg"></i>
+         <li class="maindeteail1">PHONE NUMBER</li>
+         <li class="maindeteail11">6380355874</li>
+         <li class="maindeteail11">6380355874</li>
+      </ul> 
+   </div>
+   
+<div class="maindeteaildiv">
+   <ul>
+      
+      <i style="width: 30px; height: 30px;color: rgb(248, 247, 247);" class="fa-sharp fa-regular fa-message fa-lg"></i>
+      <li class="maindeteail1">CONTACT</li>
+      <li class="maindeteail11">gowthamduraisamy97@gmail.com</li>
+      <li class="maindeteail11">gowthamduraisamy97@gmail.com</li>
+   </ul>
+</div>
+<div class="maindeteaildiv">
+   <ul>
+      <li>  <i style="width: 30px; height: 30px;color: rgb(248, 247, 247);" class="fa-regular fa-clock fa-lg"></i></li> 
+      <li class="maindeteail1">OPENING TIMES</li>
+      <li class="maindeteail11">Mon - Sat 8:00 - 17:30, Sunday - Closed</li>
+      <li class="maindeteail1">FIND ON MAP</li>
+   </ul>
+</div>
+
+</div> 
+
+</div>
+
+   </container-fluid>
+
+     <container-fluid> 
+
+    <div class="servicee" style=" width:96%; height: 500px;margin-top: 150px; margin-left: 30px;"> 
+    
+    <div class="serh0"  >
+       <div class="serfle">
+          <h1 class="serh1">SERVICES</h1>
+          <h1 class="serh2">OUR SPECIALIZATION</h1>
+       </div>
+       <div style="width: 0px;">
+          <h1 class="serhov" style="color: #050506; font-size: 13px; letter-spacing:1px; padding-left: 45rem; padding-top: 6rem;width: 150px;">VIEW ALL SERVICES</h1>
+          <div>
+             <h1 class="serhov1" style="background-color:rgb(254, 254, 254); width: 150px; height: 3px; margin-left: 45rem;"></h1>
+          </div>
+        
+       </div>
+    </div>
+      
+     <div class="serbox" style="display: flex; width: 100%; height: 350px; margin-top: 6rem;">
+    
+       <div class="serbox1" style="width: 24%; height: 350px;">
+          <img class="serbox1img"  style="width: 100px; height: 100px; padding-left: 80px;"  src="./pictures/4.jpg"></img>
+          <h4 class="serbox1text1" style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 90px; padding-top: 30px;">RENOVATION</h4>
+          <p class="serbox1text2" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+          <h4 class="serbox1text3" style="color: #919198; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px;">LEARN MORE</h4>
+             <h1 class="serhov1" style="background-color:rgb(253, 253, 253); width: 100px; height: 3px;margin-left: 5.5rem;"></h1>
+       </div>
+
+       <div class="serbox2" style="width: 24%; height: 350px;"> 
+          <img class="serbox1img" style="width: 100px; height: 100px; padding-left: 80px;"  src="./pictures/2.jpg"></img>
+          <h4 class="serbox1text1" style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 90px; padding-top: 30px; ">ARCHITECTURE</h4>
+          <p class="serbox1text2" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+          <h4 class="serbox1text3"  style="color: #919198; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px;">LEARN MORE</h4>
+          <h1 class="serhov1" style="background-color:rgb(255, 254, 254); width: 100px; height: 3px;margin-left: 5.5rem;"></h1>
+       </div>
+
+       <div class="serbox2" style="width: 24% ; height: 350px;">
+          <img class="serbox1img" style="width: 100px; height: 100px; padding-left: 80px;"  src="./pictures/3.jpg"></img>
+          <h4 class="serbox1text1" style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 90px; padding-top: 30px; ">CONSTRUCTION</h4>
+          <p class="serbox1text2" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+          <h4 class="serbox1text3"  style="color: #919198; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px;">LEARN MORE</h4>
+          <h1 class="serhov1" style="background-color:rgb(255, 254, 254); width: 100px; height: 3px;margin-left: 5.5rem;"></h1>
+       </div>
+
+       <div class="serbox2" style="width: 24%; height: 350px;">
+          <img class="serbox1img" style="width: 100px; height: 100px; padding-left: 80px;"  src="./pictures/1.jpg"></img>
+          <h4 class="serbox1img11"  style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 90px; padding-top: 30px; ">FINANCIAL RESULTS</h4>
+          <p class="serbox1text2" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+          <h4 class="serbox1text3" style="color: #919198; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px;">LEARN MORE</h4>
+          <h1 class="serhov1" style="background-color:rgb(254, 253, 253); width: 100px; height: 3px;margin-left: 5.5rem;"></h1>
+        </div>
+    </div>
+    </div>
+    
+       </container-fluid> 
+ 
+        <container-fluid>
+         <div class="aboutdiv1" style=" width:96%; height: 500px;margin-top: 60px; margin-left: 30px;display: flex;">
+            <img class="aboutimg" style="width: 46%; height: 400px; padding-left: 80px; margin-top: 4rem;"  src="./pictures/serv-1.jpg"></img>
+            <div class="serh0"  >
+               <div>
+                  <h1 class="serh1">ABOUT</h1>
+                  <h1 class="serh2">WHO WE ARE</h1>
+                  <p class="aboutp1" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 120px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem deserunt nobis non, quia quas cupiditate laboriosam, temporibus totam pariatur beatae necessitatibus error voluptates distinctio animi autem possimus provident. Vero, numquam?</p>
+                  <p class="aboutp111" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 40px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem deserunt nobis non, quia quas cupiditate laboriosam, temporibus totam pariatur beatae necessitatibus error voluptates distinctio animi autem possimus provident. Vero, numquam? pariatur beatae necessitatibus error voluptates distinctio animi autem possimus provident. Vero, numquam?</p>
+              <h1 class="aboutp21" style="color: #919198; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 30px;">MEET THE TEAM</h1>
+              <h1 class="serhov1" style="background-color:rgb(254, 254, 254); width: 125px; height: 3px;margin-left:4.3rem;"></h1>
+            </div>
+            </div>
+         </div>
+        
+         </container-fluid>
+
+         <container-fluid>
+            <div class="count" style="display: flex; width: 100%; height: 250px; margin-top: 6rem;">
+         
+               <div class="count1" style="width: 24%;">
+                  <h4 class="counth1" style="font-size: 60px;line-height: 70px;padding-left: 90px; padding-top: 30px; color: #e47312; font-weight: 500;">170</h4>
+                  <p class="counth1" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+               </div>
+               <div class="count1" style="width: 24%;">
+                  <h4 class="counth1" style="font-size: 60px;line-height: 70px;padding-left: 90px; padding-top: 30px; color: #e47312; font-weight: 500;">10</h4>
+                  <p class="counth1" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+               </div>
+               <div class="count1" style="width: 24%;">
+                  <h4 class="counth1" style="font-size: 60px;line-height: 70px;padding-left: 90px; padding-top: 30px; color: #e47312; font-weight: 500;">690</h4>
+                  <p class="counth1" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+               </div>
+               <div class="count1" style="width: 24%;">
+                  <h4 class="counth1" style="font-size: 60px;line-height: 70px;padding-left: 90px; padding-top: 30px; color: #e47312; font-weight: 500;">7.1</h4>
+                  <p class="counth1" style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia labore suscipit amet.</p>
+               </div>
+         
+            </div>
+           
+            </container-fluid> 
+
+            <container-fluid> 
+
+               <div class="projectmain" style=" width:96%; height: 1165px;margin-top: 60px; margin-left: 30px; background-color: #f7f8fc;"> 
+               
+               <div class="serh0"  >
+                  <div>
+                     <h1 class="serh1">PROJECTS</h1>
+                     <h1 class="serh211">OUR WORK</h1>
+                  </div>
+                 
+               </div>
+                 
+                <div class="projectdiv2" style="display: flex; width: 100%; height: 350px; margin-top: 6rem;">
+               
+                  
+                     <div class="projectdiv3" style="width:31%; height: 400px; margin-top: 5rem;  padding-left: 24px;">
+                        <img  style="width: 100%; height: 400px;"  class="propic1"></img>
+                     </div>
+                
+                  <div class="projectdiv3" style="width:31%; height: 400px; margin-top: 5rem;  padding-left: 24px;">
+                     <img  style="width: 100%; height: 400px;"  class="propic2"></img>
+                  </div>
+                  <div class="projectdiv3" style="width:31%; height: 400px; margin-top: 5rem;  padding-left: 24px;">
+                     <img  style="width: 100%; height: 400px;"  class="propic3"></img>
+                  </div>
+               
+               </div>
+            
+               <div class="projectdiv4" style="display: flex; width: 100%; height: 350px; margin-top: 6rem;">
+               
+                  <div class="projectdiv3" style="width:31%; height: 400px; margin-top: 5rem;  padding-left: 24px;">
+                     <img  style="width: 100%; height: 400px;" class="propic4"  ></img>
+                  </div>
+                  <div class="projectdiv3" style="width:31%; height: 400px; margin-top: 5rem;  padding-left: 24px;">
+                     <img  style="width: 100%; height: 400px;" class="propic5"  ></img>
+                  </div>
+                  <div class="projectdiv3" style="width:31%; height: 400px; margin-top: 5rem;  padding-left: 24px;">
+                     <img  style="width: 100%; height: 400px;" class="propic6"  ></img>
+                  </div> 
+               
+               </div>
+            
+               </div>
+               
+               </container-fluid> 
+
+               <container-fluid >
+                  <div class="parallax1">
+                  <div class="banner2">
+               
+                     <h1 class="mainh110" >LET'S MAKE SOMETHING GREAT TOGETHER</h1>
+                     <p class="mainp110">Get in touch with us and send some basic info for a quick quote.</p>
+                     <p class="parallex1p1" style="color:#fdfdfd; font-size: 13px; letter-spacing: 1px; align-items: center;padding-top: 2rem;padding-left: 40rem;  ">GET FREE QUOTE</p>
+                     <h1 class="serhov2" style="background-color:#e47312, rgba(255, 99, 97, 0.78); width: 120px; height: 3px;margin-left:40rem;"></h1>
+                  </div>
+                  </div>
+               </container-fluid>
+
+               <container-fluid class="terminalcontainer">
+
+                  <div class="teamdiv1" style=" width:96%; height:700px; margin-left: 30px; background-color: #f7f8fc;"> 
+                  
+                  <div class="serh0"  >
+                     <div>
+                        <h1 class="serh1">TEAM</h1>
+                        <h1 class="serh2">PROFESSONALS</h1>
+                     </div>
+                     <div>
+                        <h1 class="teamh11" style="color: #919198; font-size: 13px; letter-spacing:1px; padding-left: 57rem; padding-top: 6rem;">ABOUT US</h1>
+                        <h1 class="teamh12" style="background-color:#f7f8fb; width: 75px; height: 3px;margin-left: 57rem;"></h1>
+                     </div>
+                  </div>
+                    
+                   <div class="teamdiv2" style="display: flex; width: 100%; height: 350px; margin-top: 6rem;">
+                  
+                     <div class="teamdiv21" style="width:19%; height: 410px; background-color: white;margin-left: 6rem; position: relative;">
+                        <img class="teamimg11" style="width: 278px; height: 300px;"src="./pictures/team-1.jpg"></img>
+      
+                        <div class="teamdiv22" style="margin-left:13.5rem; bottom:0rem; position: absolute; background-color: #e47312;">
+                           <div  style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                              <i class="fa-brands fa-facebook-f mainicon11"></i>
+                                </div>
+                                <hr class="hrrr" style="margin-left: 10px; margin-right: 10px;">
+                                <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                 <i class="fa-brands fa-twitter mainicon11"></i>
+                                   </div>
+                                   <hr class="hrrr" style="margin-left: 10px; margin-right: 10px;">
+                                   <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                    <i class="fa-brands fa-linkedin-in mainicon11"></i>
+                                      </div>
+                        </div>
+                        <h4 class="teamtext11" style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 30px; padding-top: 20px; font-family: 'Dosis', sans-serif;">PHILIP BROWER</h4>
+                        <p class="teamtext12" style="font-family:  Dosis, sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px; padding-left: 30px; padding-top: 10px;">Managing Director</p>
+                     </div>
+
+
+
+
+                     <div class="teamdiv2111" style="width:19%; height: 410px; background-color: white;margin-left: 3rem; position: relative;">
+                        <img class="teamimg11"  style="width: 278px; height: 300px;" src="./pictures/team-2.jpg"></img>
+      
+                        <div class="teamdiv22" style="margin-left:13.5rem; bottom:0rem; position: absolute; background-color: #e47312;">
+                           <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                              <i class="fa-brands fa-facebook-f mainicon11"></i>
+                                </div>
+                                <hr style="margin-left: 10px; margin-right: 10px;">
+                                <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                 <i class="fa-brands fa-twitter mainicon11"></i>
+                                   </div>
+                                   <hr style="margin-left: 10px; margin-right: 10px;">
+                                   <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                    <i class="fa-brands fa-linkedin-in mainicon11"></i>
+                                      </div>
+                        </div>
+                        <h4 style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 30px; padding-top: 20px;  font-family: 'Dosis', sans-serif;">JIMMY MCGILL</h4>
+                        <p style="font-family:  Dosis, sans-serif; color: #919197; font-size: 17px; line-height: 25px; padding-left: 30px; padding-top: 10px;">Managing Director</p>
+                     </div>
+
+
+
+
+                     <div class="teamdiv2111" style="width:19%; height: 410px; background-color: white;margin-left: 3rem; position: relative;">
+                        <img class="teamimg11" style="width: 278px; height: 300px;" src="./pictures/team-3.jpg"></img>
+                        <div class="teamdiv22" style="margin-left:13.5rem; bottom:0rem; position: absolute; background-color: #e47312;">
+                           <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                              <i class="fa-brands fa-facebook-f mainicon11"></i>
+                                </div>
+                                <hr style="margin-left: 10px; margin-right: 10px;">
+                                <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                 <i class="fa-brands fa-twitter mainicon11"></i>
+                                   </div>
+                                   <hr style="margin-left: 10px; margin-right: 10px;">
+                                   <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                    <i class="fa-brands fa-linkedin-in mainicon11"></i>
+                                      </div>
+                        </div>
+                        <h4 style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 30px; padding-top: 20px;  font-family: 'Dosis', sans-serif;">SARA CONNOR</h4>
+                        <p style="font-family:  Dosis, sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px; padding-left: 30px; padding-top: 10px;">Managing Director</p>
+                     </div>
+
+
+
+
+                     <div class="teamdiv2111" style="width:19%; height: 410px; background-color: white;margin-left: 3rem; position: relative;">
+                        <img class="teamimg11" style="width: 278px; height: 300px;" src="./pictures/team-4.jpg"></img>
+                        <div class="teamdiv22" style="margin-left:13.5rem; bottom:0rem; position: absolute; background-color: #e47312;">
+                           <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                              <i class="fa-brands fa-facebook-f mainicon11"></i>
+                                </div>
+                                <hr style="margin-left: 10px; margin-right: 10px;">
+                                <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                 <i class="fa-brands fa-twitter mainicon11"></i>
+                                   </div>
+                                   <hr style="margin-left: 10px; margin-right: 10px;">
+                                   <div style="height: 3.8rem; width: 3.8rem; background-color: #e47312;">
+                                    <i class="fa-brands fa-linkedin-in mainicon11"></i>
+                                      </div>
+                        </div>
+                        <h4 style="font-size: 17px;letter-spacing: 1px;padding-left: 30px; padding-top: 20px;  font-family: 'Dosis', sans-serif;">SARA CONNOR</h4>
+                        <p style="font-family:  Dosis, sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px; padding-left: 30px; padding-top: 10px;">Managing Director</p>
+                     </div>
+
+                     </div> 
+                  </div>
+               </container-fluid> 
+
+                 <container-fluid class="terminalcontainer1">
+      
+                        <div class="terminals" style=" width:96%; height: 1000px;margin-top: 0px; margin-left: 30px;background-color: #f7f8fc;"> 
+                        
+                        <div class="serh0 termi" style="display: flex;"   >
+                           <div class="termi1">
+                              <h1 class="serh1" style="padding-top: 14rem;">CLIENTS</h1>
+                              <h1 class="serh2 terminalhead" style="padding-top: 19rem;top: 0px; height:70px; display: inline-block;">TERMINALS</h1>
+                              <h6 class="terminalh1" style="font-family:  Dosis, sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px; width: 400px; padding-top: 30px;padding-left: 6.5rem;">Lorem ipsum dolor sit amet consectetur adipisicing<br>elit. Nesciunt voluptates labore quaerat veniam!</h6>
+                              <h1 class="terminalh2" style="color: #919198; font-size: 13px; letter-spacing:1px; padding-left: 6.5rem; padding-top: 3rem;">OUR SERVICES</h1>
+                              <h1 class="serhov1" style="background-color:#f9fafa; width: 110px; height: 3px;margin-left: 6.6rem;"></h1>
+                           </div>
+
+
+
+                         <div class="terminalsdiv3" style="display: flex;">
+                              <div class="terminalsdiv3div1" style="width:34%; height: 300px; background-color: white;margin-left: 14rem; position: relative; margin-top: 8rem;">
+                                 <div class="blogbc" style="width: 85px; bottom: 250px; left: 7rem; height: 85px;position: absolute; border-radius: 50px;"></div>
+                                 <h4 class="teminald1d3h1" style="font-size: 17px;letter-spacing: 1px; padding-top: 60px;  font-family: 'Dosis', sans-serif; text-align: center;">SARA WILLIAM</h4>
+                                 <p class="teminald1d3h2" style="font-family:  'Dosis', sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px;padding-top: 10px; text-align: center;">Architect at Group</p>
+                             <p class="teminald1d3h3" style="color: #919197; font-family:Dosis, sans-serif; font-size: 17px; line-height: 25px; padding: 20px; text-align: center;">"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet"</p>
+                              </div>
+
+                              <div class="terminalsdiv3div1" style="width:34%; height: 300px; background-color: white;margin-left: 2rem; position: relative; margin-top: 15rem;">
+                                 <div class="blogbc" style="width: 85px; bottom: 250px; left: 7rem; height: 85px;position: absolute; border-radius: 50px;"></div>
+                                 <h4 class="teminald1d3h11" style="font-size: 17px;letter-spacing: 1px; padding-top: 60px;  font-family: 'Dosis', sans-serif; text-align: center;">RAVEN DURGAN</h4>
+                                 <p class="teminald1d3h2" style="font-family:  'Dosis', sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px;padding-top: 10px; text-align: center;">CEO at Webflow</p>
+                             <p class="teminald1d3h3" style="color: #919197; font-family:Dosis, sans-serif; font-size: 17px; line-height: 25px; padding: 20px; text-align: center;">"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet"</p>
+                              </div> 
+
+                           </div>
+                        </div>
+
+
+                         <div class="terminalsdiv4" style="display: flex; position: absolute; margin-bottom: 15rem;">
+
+                           <div class="terminalsdiv3div1" style="width:21%; height: 300px; background-color: white;margin-left: 45rem; position: relative;">
+                              <div class="blogbc" style="width: 85px; bottom:250px; left: 7rem; height: 85px;position: absolute; border-radius: 50px;"></div>
+                              <h4 style="font-size: 17px;letter-spacing: 1px; padding-top: 60px;  font-family: 'Dosis', sans-serif; text-align: center;">JOHN JUNIOR</h4>
+                              <p style="font-family:  'Dosis', sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px;padding-top: 10px; text-align: center;">Menager at Complex</p>
+                          <p style="color: #919197; font-family:Dosis, sans-serif; font-size: 17px; line-height: 25px; padding: 20px; text-align: center;">"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet"</p>
+                           </div>
+
+                            <div class="terminalsdiv3div1" style="width:21%; height:300px; background-color: white;margin-left: 2rem; position: relative; margin-top: 5rem;">
+                              <div class="blogbc" style="width: 85px; bottom:250px; left: 7rem; height: 85px;position: absolute; border-radius: 50px;"></div>
+                              <h4 style="font-size: 17px;letter-spacing: 1px; padding-top: 60px;  font-family: 'Dosis', sans-serif; text-align: center;">SAMI TYPO</h4>
+                              <p style="font-family:  'Dosis', sans-serif; color: #bdbdc9; font-size: 16px; line-height: 25px;padding-top: 10px; text-align: center;">SEO at Balfin</p>
+                          <p style="color: #919197; font-family:Dosis, sans-serif; font-size: 17px; line-height: 25px; padding: 20px; text-align: center;">"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet"</p>
+                           </div>  
+                        </div>  
+                   
+                        </div>
+                     
+                   </container-fluid> 
+      
+                   <container-fluid>
+
+                     <div class="bloglatestdiv" style=" width:96%; height: 730px;margin-top: 5rem; margin-left: 30px; background-color:white"> 
+                     
+                     <div class="serh0 bloglatestdiv1"  >
+                        <div>
+                           <h1 class="serh1" style="z-index:1;">BLOG</h1>
+                           <h1 class="bloglatestdivh2"  style="width: 400PX; padding-left: 5rem; padding-top: 6rem;z-index:2;" class="serh2">LASTET NEWS</h1>
+                        </div>
+                        <div>
+                           <h1 class="bloglatestdivh1" style="color: #919198; font-size: 13px; letter-spacing:1px; padding-left: 53rem; padding-top: 6rem;">VIEW BLOG</h1>
+                           <h1 class="serhov1 bloglatestdivh3" style="background-color:#fcfbfb; width: 90px; height: 3px;margin-left: 52.6rem;"></h1>
+                        </div>
+                     </div>
+                       
+                     <div class="bloglatestdivh4"  style="display: flex; width: 100%; height: 350px; margin-top: 6rem;">
+      
+                     <div class="blogbc bloglatestdivh7" style="width:28%; height: 460px;margin-left: 6rem; position: relative;">
+                        <img class="bloglatestdivh4img1" style="width: 408px; height: 250px;"src="./pictures/port-1.jpg"></img>
+                        <div class="bloglatestdivh5" style="margin-left:20rem; bottom:21.6rem; position: absolute; background-color: #f77808;">
+                           <div class="blogcl" style="height: 4.6rem; width: 4.5rem;">
+                              <h1 style="color: #fff; font-size: 26px; font-weight: 400;line-height: 20px; font-family:  'Dosis', sans-serif; text-align: center; padding-top: 30px;">17</h1>
+                                </div>
+                                <div style="height: 2.5rem; width: 4.5rem; background-color: white">
+                                 <h1 style="font-family:  Dosis, sans-serif;font-size: 14px;line-height: 20px;color: #9d9da5; text-align: center; padding-top: 12px;">OCT</h1>
+                                   </div>    
+                        </div>
+                        <h4 class="bloglatestdivh6" style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 30px; padding-top: 20px; font-family: 'Dosis', sans-serif; color: white;">BLOGPOST 1</h4>
+                        <p style="font-family:  Dosis, sans-serif; color: hsla(0, 0%, 100%, 0.7); font-size: 17px; line-height: 25px; padding-left: 30px; padding-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro facere, necessitatibus ratione mollitia ipsum.</p>
+                    <h1 style="font-family:  Dosis, sans-serif; color: white; font-size: 13px; line-height: 25px; padding-left: 30px; padding-top: 14px; letter-spacing: 1px; font-weight: 600;">READ MORE</h1>
+                    <h1 class="serhov2" style="background-color:#fb4103c8; width: 85px; height: 3px;margin-left: 2rem;"></h1>
+                  </div>
+                  
+      
+                      <div class="blogbc bloglatestdivh8" style="width:28%; height: 460px;margin-left: 2rem; position: relative;">
+                        <img class="bloglatestdivh4img1" style="width: 408px; height: 250px;"src="./pictures/port-2.jpg"></img>
+      
+                        <div class="bloglatestdivh9" style="margin-left:20rem; bottom:21.6rem; position: absolute; background-color: #f77808;">
+                           <div class="blogcl" style="height: 4.6rem; width: 4.5rem;">
+                              <h1 style="color: #fff; font-size: 26px; font-weight: 400;line-height: 20px; font-family:  'Dosis', sans-serif; text-align: center; padding-top: 30px;">11</h1>
+                                </div>
+                                <div style="height: 2.5rem; width: 4.5rem; background-color: white">
+                                 <h1 style="font-family:  Dosis, sans-serif;font-size: 14px;line-height: 20px;color: #9d9da5; text-align: center; padding-top: 12px;">NOV</h1>
+                                   </div>  
+                        </div>
+                        <h4 style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 30px; padding-top: 20px; font-family: 'Dosis', sans-serif; color: white;">BLOGPOST 2</h4>
+                        <p style="font-family:  Dosis, sans-serif; color: hsla(0, 0%, 100%, 0.7); font-size: 17px; line-height: 25px; padding-left: 30px; padding-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro facere, necessitatibus ratione mollitia ipsum.</p>
+                    <h1 style="font-family:  Dosis, sans-serif; color: white; font-size: 13px; line-height: 25px; padding-left: 30px; padding-top: 14px; letter-spacing: 1px; font-weight: 600;">READ MORE</h1>
+                    <h1 class="serhov2" style="background-color:#fb4103c8; width: 85px; height: 3px;margin-left: 2rem;"></h1>
+                  </div> 
+      
+      
+                     <div class="blogbc bloglatestdivh8" style="width:28%; height: 460px;margin-left: 2rem; position: relative;">
+                        <img class="bloglatestdivh4img1" style="width:408px; height: 250px;"src="./pictures/port-3.jpg"></img>
+      
+                        <div class="bloglatestdivh9" style="margin-left:20rem; bottom:21.6rem; position: absolute; background-color: #f77808;">
+                           <div class="blogcl" style="height: 4.6rem; width: 4.5rem;">
+                              <h1 style="color: #fff; font-size: 26px; font-weight: 400;line-height: 20px; font-family:  'Dosis', sans-serif; text-align: center; padding-top: 30px;">17</h1>
+                                </div>
+                                <div style="height: 2.5rem; width: 4.5rem; background-color: white">
+                                 <h1 style="font-family:  Dosis, sans-serif;font-size: 14px;line-height: 20px;color: #9d9da5; text-align: center; padding-top: 12px;">DEC</h1>
+                                   </div>   
+                        </div>
+                        <h4 style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 30px; padding-top: 20px; font-family: 'Dosis', sans-serif; color: white;">BLOGPOST 3</h4>
+                        <p style="font-family:  Dosis, sans-serif; color: hsla(0, 0%, 100%, 0.7); font-size: 17px; line-height: 25px; padding-left: 30px; padding-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro facere, necessitatibus ratione mollitia ipsum.</p>
+                    <h1 style="font-family:  Dosis, sans-serif; color: white; font-size: 13px; line-height: 25px; padding-left: 30px; padding-top: 14px; letter-spacing: 1px; font-weight: 600;">READ MORE</h1>
+                    <h1 class="serhov2" style="background-color:#fb4103c8; width: 85px; height: 3px;margin-left: 2rem;"></h1>
+                  </div>
+       
+                     </div> 
+      
+                     </div>
+                     
+         </container-fluid>
+
+         <container-fluid>
+            <div class="footer" style="display: flex;">
+               <div class="footer1">
+                  <ul>
+                     <li class="footer2">TRUSTED BY TOP COMPANIES</li>
+                  </ul> 
+               </div>
+               <div class="footer1">
+                  <img  style="width: 120px; height: 50px;"src="./pictures/logo-1w.png"></img>
+            </div>
+            <div class="footer1">
+               <img  style="width: 120px; height: 50px;"src="./pictures/logo-2w.png"></img>
+         </div>
+         <div class="footer1">
+            <img  style="width: 120px; height: 50px;"src="./pictures/logo-3w.png"></img>
+      </div>
+      <div class="footer1">
+         <img  style="width: 120px; height: 50px;"src="./pictures/logo-4w.png"></img>
+      </div>
+      <div class="footer1">
+         <img  style="width: 120px; height: 50px;"src="./pictures/logo-5w.png"></img>
+      </div>
+            </div>
+      
+      
+      
+             <div class="footer3" style=" width: 90%; height: 530px; margin-left: 4.5rem; background-color: #0a1229;">
+      <div class="footer4" style="display: flex;">
+
+               <div style="width: 31%; height: 350px;">
+                  <div class="footerh4" style="display: flex;">
+                     <h4 class="footerh1" style="font-size: 14px;line-height: 2; letter-spacing: 1px;padding-left: 90px; padding-top: 60px; color: white;">ABOUT NUUK<span style="width: 100px; height: 100px; color: red;"></span></h4>
+                     <h1 class="serhov2" style="background-color:#f72824; width:170px; height: 2px;margin-left:1rem; margin-top: 80px; display: inline-block;"></h1>
+                  </div>
+                  <p class="footerh2" style="font-family:  Dosis, sans-serif; color: white; font-size: 17px; line-height: 25px; padding-left: 90px; padding-top: 30px;">Based on collective work and shared knowledge, Nuuk aims to favor dialogue and debate, to transform individual knowledge into increased creative potential.</p>
+                  <h4 class="footerh3" style="color: white; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px;">FIND ON MAP</h4>
+                  <h1  style="background-color:#0a1229; width: 100px; height: 3px;margin-left: 5.5rem;"></h1>
+               </div>
+      
+                <div style="width: 31%; height: 350px;"> 
+                  <div class="footerh4" style="display: flex;">
+                  <h4 class="footerh1" style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 90px; padding-top: 60px;color: white; ">SERVICES </h4>
+                  <h1 style="background-color:#f72824; width:170px; height: 2px;margin-left:1rem; margin-top: 80px; display: inline-block;"></h1>
+               </div>
+                  <h4 class="footerh3" style="color: white; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 30px; font-weight: 600; line-height: 20px;">FINANCIAL RESULTS</h4>
+                  <h1 class="serhov2" style="background-color:#0a1229; width: 155px; height: 3px;margin-left: 5.5rem;"></h1>
+                  <h4 class="footerh3" style="color: white; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px; font-weight: 600; line-height: 20px;">CONSTRUCTION</h4>
+                  <h1 class="serhov2" style="background-color:#0a1229; width: 122px; height: 3px;margin-left: 5.5rem;"></h1>
+                  <h4 class="footerh3" style="color: white; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px; font-weight: 600; line-height: 20px;">ARCHITECTURE</h4>
+                  <h1 class="serhov2" style="background-color:#0a1229; width: 122px; height: 3px;margin-left: 5.5rem;"></h1>
+                  <h4 class="footerh3" style="color: white; font-size: 13px; letter-spacing: 1px; padding-left: 90px; padding-top: 20px; font-weight: 600; line-height: 20px;">RENOVATION</h4>
+                  <h1 class="serhov2" style="background-color:#0a1229; width: 100px; height: 3px;margin-left: 5.5rem;"></h1>
+               </div> 
+      
+
+
+
+
+
+
+
+               <div style="width: 33% ; height: 350px;">
+                  <div class="footerh4" style="display: flex;">
+                  <h4 class="footerh1" style="font-size: 17px;line-height: 30px; letter-spacing: 1px;padding-left: 90px; padding-top: 60px;color: white; ">CONTACT US</h4>
+                  <h1  style="background-color:#f72824; width:170px; height: 2px;margin-left:1rem; margin-top: 80px; display: inline-block;"></h1>
+               </div>
+                  <div class="footerh7" style="display:flex;">
+         <i  style="width: 30px; height: 30px;color: rgb(248, 247, 247); margin-top: 30px; margin-left: 90px;" class="fa-sharp fa-solid fa-phone footericon"></i>
+         <h4 style="font-size: 13px;line-height: 20px; letter-spacing: 1px;padding-left: 10px; padding-top: 30px;color: white;font-family:'Dosis', sans-serif; ">PHONE NUMBER </h4>
+      </div>
+                <h4 class="footerh8"  style="color: #919198; font-size: 15px; letter-spacing: 1px; padding-left: 90px; padding-top:10px;font-family: Dosis, sans-serif;line-height: 25px;">6380355874</h4>
+                  
+                <div class="footerh5" style="display:flex;">
+                     <li>  <i style="width: 30px; height: 30px;color: rgb(248, 247, 247); margin-top: 27px; margin-left: 90px;" class="fa-regular fa-clock footericon"></i></li> 
+                     <h4 style="font-size: 13px;line-height: 20px; letter-spacing: 1px;padding-left: 10px; padding-top: 25px;color: white;font-family:'Dosis', sans-serif; ">OPENING TIMES </h4>
+                  </div>
+                  <h4 class="footerh8" style="color: #919198; font-size: 15px; letter-spacing: 1px; padding-left: 90px; padding-top: 10px;font-family: Dosis, sans-serif;line-height: 25px;">Mon - Sat 8:00 - 17:30, Sunday - Closed</h4>
+                 
+                  <div  style="display:flex;">
+                     <i  style="width: 30px; height: 30px;color: rgb(248, 247, 247); margin-top: 27px; margin-left: 90px;" class="fa-sharp fa-regular fa-message footericon"></i>
+                     <h4 style="font-size: 13px;line-height: 20px; letter-spacing: 1px;padding-left: 10px; padding-top: 25px;color: white; font-family:'Dosis', sans-serif;">CONTACT </h4>
+                  </div>
+                  <h4 class="footerh6" style="color: #919198; font-size: 15px; letter-spacing: 1px; padding-left: 90px; padding-top: 10px;font-family: Dosis, sans-serif;line-height: 25px;">gowthamduraisamy97@gmail.com</h4>
+               </div>
+            </div>
+      
+               <div class="footerdivend">
+                  <img class="navlogo" style="width: 80px; height: 30px; margin-top: 40px; margin-left: 40px;" src="./pictures/logo-white.png"></img>
+                 </div>
+            </div> 
+      
+      
+         </container-fluid> 
+
+    </body>
+    </html>
+    
